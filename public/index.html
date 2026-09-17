@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+
+  <header class="header">
+
+    <div class="brand">
+
+        <h1>My AI</h1>
+
+        <button
+            id="new-chat-button"
+            class="new-chat-button"
+            type="button"
+            title="Start a new chat"
+        >
+            + New Chat
+        </button>
+
+    </div>
+
+
+    <div class="model-container">
+
+        <label for="model-select">
+            Model
+        </label>
+
+        <select id="model-select">
+            <option value="">
+                Loading models...
+            </option>
+        </select>
+
+    </div>
+
+</header>
+
+
+
+        <!-- Chat -->
+
+        <main id="chat" class="chat">
+
+            <div class="message ai-message">
+
+                <div class="avatar">
+                    AI
+                </div>
+
+                <div class="bubble">
+                    Hello! 👋<br>
+                    I'm your AI assistant. How can I help you?
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- Input -->
+
+        <div class="input-area">
+
+            <form id="chat-form">
+
+                <input
+                    id="user-input"
+                    type="text"
+                    placeholder="Message My AI..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button
+                    id="send-button"
+                    type="submit"
+                >
+                    ➤
+                </button>
+
+            </form>
+
+
+            <div class="controls">
+
+                <label class="web-search">
+
+                    <input
+                        type="checkbox"
+                        id="web-search"
+                    >
+
+                    <span>
+                        🔎 Web Search
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <p class="notice">
+                My AI can make mistakes.
+                Check important information.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
