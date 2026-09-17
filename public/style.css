@@ -668,3 +668,40 @@ body {
     }
 
 }
+
+/* ========================================
+   BRAND TITLE
+======================================== */
+
+.brand-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-title h1 {
+    line-height: 1.1;
+}
+
+.brand-title span {
+    margin-top: 2px;
+
+    color: #777;
+
+    font-size: 9px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .brand-title span {
+        font-size: 8px;
+    }
+
+}
